@@ -59,3 +59,16 @@ TC016 — Valores muito pequenos: verifica a normalização de valores próximos
 Você precisa ter o Godot instalado, na steam tem ele por 2GB, de graça.
 
 Roda o comando no CMD: & "Path do godot.exe" --headless -s res://addons/gut/gut_cmdln.gd
+
+
+
+# Fontes
+
+- Godot Engine — Vector2:
+  https://docs.godotengine.org/en/stable/classes/class_vector2.html
+
+- Godot Engine — GDScript:
+  https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/
+
+- GUT — Asserts and Methods:
+  https://gut.readthedocs.io/en/godot_3x/Asserts-and-Methods.html
