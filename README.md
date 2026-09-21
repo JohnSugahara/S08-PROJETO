@@ -10,8 +10,6 @@ Projeto de testes automatizados utilizando a engine **Godot** e o framework **GU
 
 ## Testes ~~ John Nunes Sugahara
 
-Foram definidos 20 casos de teste, divididos em duas categorias:
-
 ### Dados Válidos / Caminho Feliz
 
 Cenários com entradas corretas e fluxos esperados de sucesso.
