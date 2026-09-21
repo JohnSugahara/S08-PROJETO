@@ -1,6 +1,7 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1789933618
+::res://::1790025970
 icon.svg::CompressedTexture2D::402748313658268977::1789932989::1789933010::1::::<><><>0<>0<>bf279229d213f18775f2e41c8c0e45dc<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1790025894::0::1::::<><><>0<>0<><>::
 ::res://addons/::1789933279
 ::res://addons/gut/::1789933317
 autofree.gd::GDScript::4019677876572174179::1789933280::0::1::::<>RefCounted<><>0<>0<><>::
@@ -154,5 +155,7 @@ red.png::CompressedTexture2D::2443263267725858415::1789933290::1789933317::1::::
 Script.svg::CompressedTexture2D::4817060143842260657::1789933290::1789933317::1::::<><><>0<>0<>3bf5139f8dfabcb7b156346c8559c7dc<>res://.godot/imported/Script.svg-34c66aae9c985e3e0470426acbbcda04.ctex::
 VSplitContainer.svg::CompressedTexture2D::2887385407422649463::1789933290::1789933317::1::::<><><>0<>0<>e0beaacb3020560e40771dab52414040<>res://.godot/imported/VSplitContainer.svg-6cec29fefa7e65d6ff7c2fdb9a1bb9ab.ctex::
 yellow.png::CompressedTexture2D::1043265824178416429::1789933290::1789933317::1::::<><><>0<>0<>e1c5049147dc1aeb62405fc086032860<>res://.godot/imported/yellow.png-b3cf3d463958a169d909273d3d742052.ctex::
-::res://Tests0/::1789933878
+::res://logstest/::1789934447
+::res://Tests0/::1790025452
+test_tesjohn.gd::GDScript::8277537285905005532::1790025906::0::1::::<>RefCounted<><>0<>0<><>::
 test_test.gd::GDScript::5943140439755687031::1789934353::0::1::::<>GutTest<><>0<>0<><>::

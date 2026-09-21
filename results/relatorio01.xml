@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="GutTests" failures="0" tests="19" >
+  <testsuite name="Tests0/test_tesjohn.gd" tests="16" failures="0" skipped="0" time="0.004621" >
+	  <testcase name="test_TC001_vector2_normalization" assertions="2" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000685" >
+	  </testcase>
+	  <testcase name="test_TC002_vector2_diagonal_normalization" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000247" >
+	  </testcase>
+	  <testcase name="test_TC003_vector2_length" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000189" >
+	  </testcase>
+	  <testcase name="test_TC004_vector2_distance" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000943" >
+	  </testcase>
+	  <testcase name="test_TC005_vector2_addition" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000183" >
+	  </testcase>
+	  <testcase name="test_TC006_vector2_subtraction" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000146" >
+	  </testcase>
+	  <testcase name="test_TC007_vector2_zero_normalization" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.00016" >
+	  </testcase>
+	  <testcase name="test_TC008_vector2_same_position_distance" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000109" >
+	  </testcase>
+	  <testcase name="test_TC009_vector2_add_zero" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.00012" >
+	  </testcase>
+	  <testcase name="test_TC010_vector2_subtract_itself" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000148" >
+	  </testcase>
+	  <testcase name="test_TC011_vector2_multiply_by_zero" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000239" >
+	  </testcase>
+	  <testcase name="test_TC012_vector2_negative_values" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000228" >
+	  </testcase>
+	  <testcase name="test_TC013_vector2_opposite_vectors" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000191" >
+	  </testcase>
+	  <testcase name="test_TC014_vector2_perpendicular_vectors" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.00022" >
+	  </testcase>
+	  <testcase name="test_TC015_vector2_full_rotation" assertions="2" status="pass" classname="Tests0/test_tesjohn.gd" time="0.0005" >
+	  </testcase>
+	  <testcase name="test_TC016_vector2_very_small_values" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000313" >
+	  </testcase>
+  </testsuite>
+  <testsuite name="Tests0/test_test.gd" tests="3" failures="0" skipped="0" time="0.000654" >
+	  <testcase name="test_vector2_api_normalization" assertions="2" status="pass" classname="Tests0/test_test.gd" time="0.000321" >
+	  </testcase>
+	  <testcase name="test_string_sha256_api" assertions="2" status="pass" classname="Tests0/test_test.gd" time="0.000168" >
+	  </testcase>
+	  <testcase name="test_json_parsing_core" assertions="2" status="pass" classname="Tests0/test_test.gd" time="0.000165" >
+	  </testcase>
+  </testsuite>
+</testsuites>

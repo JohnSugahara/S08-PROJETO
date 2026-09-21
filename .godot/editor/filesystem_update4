@@ -1,3 +1,7 @@
-res://Tests0/tests.gd
+res://Tests0/test_tesjohn.gd
 res://addons/gut/gui/editor_globals.gd
 res://addons/gut/gui/EditorRadioButton.tres
+res://Tests0/test_vini.gd
+res://.gutconfig.json
+res://README.md
+res://results/relatorio01.xml
