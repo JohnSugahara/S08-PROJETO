@@ -3,7 +3,7 @@ extends GutTest
 const Fixtures = preload("res://Tests0/fixtures/fixtures.gd")
 
 
-# TC-001
+# TC-017
 func test_tc001_array_sort_ordena_elementos():
 	var numeros: Array = Fixtures.carregar("TC-001", "desordenado")
 
@@ -15,7 +15,7 @@ func test_tc001_array_sort_ordena_elementos():
 	assert_eq(numeros.size(), 5, "a ordenação não pode perder nem duplicar um elemento")
 
 
-# TC-002
+# TC-018
 func test_tc002_string_split_upper_e_format():
 	var partes: PackedStringArray = Fixtures.carregar("TC-002", "csv").split(Fixtures.carregar("TC-002", "separador"))
 	var mensagem: String = Fixtures.carregar("TC-002", "template").format({
@@ -29,7 +29,7 @@ func test_tc002_string_split_upper_e_format():
 	assert_eq(mensagem, Fixtures.carregar("TC-002", "mensagem_esperada"))
 
 
-# TC-003
+# TC-019
 func test_tc003_rng_mesma_seed_gera_mesma_sequencia():
 	var semente: int = Fixtures.carregar("TC-003", "seed")
 	var minimo: int = Fixtures.carregar("TC-003", "minimo")
@@ -50,7 +50,7 @@ func test_tc003_rng_mesma_seed_gera_mesma_sequencia():
 		assert_between(valor, minimo, maximo, "numero sorteado fora do intervalo")
 
 
-# TC-004
+# TC-020
 func test_tc004_node_add_child_emite_sinal():
 	var nome_filho: String = Fixtures.carregar("TC-004", "nome_filho")
 	var pai := Node.new()
@@ -67,7 +67,7 @@ func test_tc004_node_add_child_emite_sinal():
 	assert_signal_emitted(pai, Fixtures.carregar("TC-004", "sinal"))
 
 
-# TC-005
+# TC-021
 func test_tc005_fileaccess_escreve_e_le_o_mesmo_conteudo():
 	var caminho: String = Fixtures.carregar("TC-005", "caminho")
 	var conteudo: String = Fixtures.carregar("TC-005", "conteudo")

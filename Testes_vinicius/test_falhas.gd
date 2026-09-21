@@ -3,7 +3,7 @@ extends GutTest
 const Fixtures = preload("res://Tests0/fixtures/fixtures.gd")
 
 
-# TC-006
+# TC-022
 func test_tc006_json_malformado_retorna_erro():
 	var json := JSON.new()
 
@@ -15,7 +15,7 @@ func test_tc006_json_malformado_retorna_erro():
 	assert_null(json.get_data(), "não pode sobrar dado depois de um parse com erro")
 
 
-# TC-007
+# TC-023
 func test_tc007_abrir_arquivo_inexistente_retorna_null():
 	var caminho: String = Fixtures.carregar("TC-007", "caminho")
 
@@ -26,7 +26,7 @@ func test_tc007_abrir_arquivo_inexistente_retorna_null():
 	assert_false(FileAccess.file_exists(caminho))
 
 
-# TC-008
+# TC-024
 func test_tc008_string_invalida_nao_vira_numero():
 	var inteiro_invalido: String = Fixtures.carregar("TC-008", "inteiro_invalido")
 	var inteiro_com_lixo: String = Fixtures.carregar("TC-008", "inteiro_com_lixo")
@@ -38,7 +38,7 @@ func test_tc008_string_invalida_nao_vira_numero():
 	assert_eq(inteiro_invalido.to_int(), 0, "to_int() de texto inválido deve dar 0")
 
 
-# TC-009
+# TC-025
 func test_tc009_busca_de_item_inexistente_nao_quebra():
 	var inventario: Dictionary = Fixtures.carregar("TC-009", "inventario")
 	var lista: Array = Fixtures.carregar("TC-009", "lista")
@@ -52,7 +52,7 @@ func test_tc009_busca_de_item_inexistente_nao_quebra():
 	assert_false(lista.has(item_ausente))
 
 
-# TC-010
+# TC-026
 func test_tc010_regex_com_padrao_invalido():
 	var regex := RegEx.new()
 
