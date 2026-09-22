@@ -49,7 +49,38 @@ TC015 — Rotação de 360°: verifica se uma rotação completa mantém o vetor
 
 TC016 — Valores muito pequenos: verifica a normalização de valores próximos de zero.
 
+---
 
+## Testes ~~ Vinícius Carvalho Ensá
+
+### Dados Válidos / Caminho Feliz
+
+Cenários com entradas corretas e fluxos esperados de sucesso.
+
+TC017 — Ordenação de array: verifica a ordenação de um array em ordem crescente e decrescente.
+
+TC018 — Manipulação de string: verifica a separação, conversão para maiúsculas e formatação de um texto.
+
+TC019 — Geração de números aleatórios: verifica se a mesma seed produz sempre a mesma sequência.
+
+TC020 — Inserção de nó na cena: verifica a inserção de um nó filho e a emissão do sinal correspondente.
+
+TC021 — Escrita e leitura de arquivo: verifica se o conteúdo lido de um arquivo é igual ao conteúdo gravado.
+
+
+### Dados Inválidos / Caminho Infeliz
+
+TC022 — JSON malformado: verifica se um JSON inválido retorna erro de parse.
+
+TC023 — Arquivo inexistente: verifica se a abertura de um arquivo inexistente retorna nulo.
+
+TC024 — Texto inválido: verifica a conversão de um texto não numérico para número.
+
+TC025 — Item inexistente: verifica a busca de um item ausente em array e dicionário.
+
+TC026 — Expressão regular inválida: verifica a compilação de um padrão de RegEx malformado.
+
+---
 
 
 ### COMO GERAR RELATORIOS XML
