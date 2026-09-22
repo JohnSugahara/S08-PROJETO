@@ -82,14 +82,55 @@ TC026 — Expressão regular inválida: verifica a compilação de um padrão de
 
 ---
 
+## Testes ~~ Tales Henrique Moreira Carvalho
+
+### Dados Válidos / Caminho Feliz
+
+Cenários com entradas corretas e fluxos esperados de sucesso.
+
+TC026 — Sobrescrita: modo WRITE trunca o conteúdo anterior.
+TC027 — Append: acrescenta texto ao final do arquivo.
+TC030 — Pastas recursivas: cria a árvore de pastas e salva dentro dela.
+TC031 — Remoção: apaga um arquivo existente.
+TC033 — Renomear: move o arquivo mantendo o conteúdo.
+TC034 — Copiar: cria uma cópia idêntica sem alterar o original.
+TC035 — JSON: salva um Dictionary e recarrega corretamente.
+TC037 — store_var/get_var: preserva os tipos nativos do Godot.
+TC038 — Binário: lê valores binários na ordem e tamanho gravados.
+TC039 — ConfigFile: salva e carrega valores corretamente.
+TC041 — Resource: salva e recarrega um Resource equivalente.
+TC042 — Criptografia (cru): conteúdo não aparece em texto puro no disco.
+TC043 — Criptografia (senha certa): recupera o conteúdo original.
+
+### Dados Inválidos / Caminho Ruim
+
+Cenários com entradas inválidas ou situações de erro.
+
+TC029 — Pasta inexistente: escrita falha se a pasta não existe.
+TC032 — Remoção inexistente: remover arquivo que não existe retorna erro.
+TC036 — JSON corrompido: gera erro de parse.
+TC040 — ConfigFile ausente: chave e arquivo inexistentes retornam valor padrão e erro.
+TC044 — Criptografia (senha errada): abertura falha.
+
+### Casos de Borda / Parametrizado
+
+Mesmo teste rodando com múltiplos conjuntos de dados extremos.
+
+TC028 — Textos variados: vazio, acentuado, multilinha e com emoji.
+Ponta a Ponta
+
+### Fluxo completo de uso, simulando um sistema real de save de jogo.
+
+TC045 — Fluxo completo: salva, carrega, altera e recarrega um save.
+TC046 — Save inexistente: retorna dicionário vazio.
+TC047 — Save corrompido: retorna dicionário vazio.
+TC048 — Formato errado: JSON válido mas fora do formato esperado retorna vazio.
 
 ### COMO GERAR RELATORIOS XML
 
 Você precisa ter o Godot instalado, na steam tem ele por 2GB, de graça.
 
 Roda o comando no CMD: & "Path do godot.exe" --headless -s res://addons/gut/gut_cmdln.gd
-
-
 
 # Fontes
 
