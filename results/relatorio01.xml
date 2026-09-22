@@ -1,45 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="GutTests" failures="0" tests="19" >
-  <testsuite name="Tests0/test_tesjohn.gd" tests="16" failures="0" skipped="0" time="0.004621" >
-	  <testcase name="test_TC001_vector2_normalization" assertions="2" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000685" >
-	  </testcase>
-	  <testcase name="test_TC002_vector2_diagonal_normalization" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000247" >
-	  </testcase>
-	  <testcase name="test_TC003_vector2_length" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000189" >
-	  </testcase>
-	  <testcase name="test_TC004_vector2_distance" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000943" >
-	  </testcase>
-	  <testcase name="test_TC005_vector2_addition" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000183" >
-	  </testcase>
-	  <testcase name="test_TC006_vector2_subtraction" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000146" >
-	  </testcase>
-	  <testcase name="test_TC007_vector2_zero_normalization" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.00016" >
-	  </testcase>
-	  <testcase name="test_TC008_vector2_same_position_distance" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000109" >
-	  </testcase>
-	  <testcase name="test_TC009_vector2_add_zero" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.00012" >
-	  </testcase>
-	  <testcase name="test_TC010_vector2_subtract_itself" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000148" >
-	  </testcase>
-	  <testcase name="test_TC011_vector2_multiply_by_zero" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000239" >
-	  </testcase>
-	  <testcase name="test_TC012_vector2_negative_values" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000228" >
-	  </testcase>
-	  <testcase name="test_TC013_vector2_opposite_vectors" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000191" >
-	  </testcase>
-	  <testcase name="test_TC014_vector2_perpendicular_vectors" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.00022" >
-	  </testcase>
-	  <testcase name="test_TC015_vector2_full_rotation" assertions="2" status="pass" classname="Tests0/test_tesjohn.gd" time="0.0005" >
-	  </testcase>
-	  <testcase name="test_TC016_vector2_very_small_values" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000313" >
-	  </testcase>
+<testsuites name="GutTests" failures="5" tests="47" >
+  <testsuite name="Tests0/Vini/test_falhas.gd" tests="5" failures="5" skipped="0" time="0.010163" >
+      <testcase name="test_tc006_json_malformado_retorna_erro" assertions="1" status="fail" classname="Tests0/Vini/test_falhas.gd" time="0.002522" >
+      <failure message="failed"><![CDATA[Unexpected Errors:
+      [1] <push_error>Não foi possível ler as fixtures: res://Tests0/fixtures/dados_teste.cfg
+      [2] <engine-2>Invalid type in function 'parse' in base 'JSON'. Cannot convert argument 1 from Nil to String.
+            at line -1]]></failure></testcase>
+      <testcase name="test_tc007_abrir_arquivo_inexistente_retorna_null" assertions="1" status="fail" classname="Tests0/Vini/test_falhas.gd" time="0.001802" >
+      <failure message="failed"><![CDATA[Unexpected Errors:
+      [1] <push_error>Não foi possível ler as fixtures: res://Tests0/fixtures/dados_teste.cfg
+      [2] <engine-2>Trying to assign value of type 'Nil' to a variable of type 'String'.
+            at line -1]]></failure></testcase>
+      <testcase name="test_tc008_string_invalida_nao_vira_numero" assertions="1" status="fail" classname="Tests0/Vini/test_falhas.gd" time="0.001803" >
+      <failure message="failed"><![CDATA[Unexpected Errors:
+      [1] <push_error>Não foi possível ler as fixtures: res://Tests0/fixtures/dados_teste.cfg
+      [2] <engine-2>Trying to assign value of type 'Nil' to a variable of type 'String'.
+            at line -1]]></failure></testcase>
+      <testcase name="test_tc009_busca_de_item_inexistente_nao_quebra" assertions="1" status="fail" classname="Tests0/Vini/test_falhas.gd" time="0.002083" >
+      <failure message="failed"><![CDATA[Unexpected Errors:
+      [1] <push_error>Não foi possível ler as fixtures: res://Tests0/fixtures/dados_teste.cfg
+      [2] <engine-2>Trying to assign value of type 'Nil' to a variable of type 'Dictionary'.
+            at line -1]]></failure></testcase>
+      <testcase name="test_tc010_regex_com_padrao_invalido" assertions="1" status="fail" classname="Tests0/Vini/test_falhas.gd" time="0.001953" >
+      <failure message="failed"><![CDATA[Unexpected Errors:
+      [1] <push_error>Não foi possível ler as fixtures: res://Tests0/fixtures/dados_teste.cfg
+      [2] <engine-2>Invalid type in function 'compile' in base 'RegEx'. Cannot convert argument 1 from Nil to String.
+            at line -1]]></failure></testcase>
   </testsuite>
-  <testsuite name="Tests0/test_test.gd" tests="3" failures="0" skipped="0" time="0.000654" >
-	  <testcase name="test_vector2_api_normalization" assertions="2" status="pass" classname="Tests0/test_test.gd" time="0.000321" >
-	  </testcase>
-	  <testcase name="test_string_sha256_api" assertions="2" status="pass" classname="Tests0/test_test.gd" time="0.000168" >
-	  </testcase>
-	  <testcase name="test_json_parsing_core" assertions="2" status="pass" classname="Tests0/test_test.gd" time="0.000165" >
-	  </testcase>
+  <testsuite name="Tests0/test_suite_save_load.gd" tests="23" failures="0" skipped="0" time="0.123251" >
+      <testcase name="test_TC026_modo_write_sobrescreve_conteudo_anterior" assertions="4" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.002756" >
+      </testcase>
+      <testcase name="test_TC027_acrescentar_ao_final_do_arquivo" assertions="4" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.005785" >
+      </testcase>
+      <testcase name="test_TC028_ida_e_volta_de_textos" assertions="20" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.02001" >
+      </testcase>
+      <testcase name="test_TC029_salvar_pasta_inexistente_falha" assertions="2" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.002858" >
+      </testcase>
+      <testcase name="test_TC030_criar_pasta_recursivamente_salvar_dentro" assertions="7" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.006209" >
+      </testcase>
+      <testcase name="test_TC031_remover_arquivo" assertions="5" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.002511" >
+      </testcase>
+      <testcase name="test_TC032_remover_arquivo_inexistente" assertions="1" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.001327" >
+      </testcase>
+      <testcase name="test_TC033_renomear_arquivo" assertions="6" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.00349" >
+      </testcase>
+      <testcase name="test_TC034_copiar_arquivo_mantem_original" assertions="6" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.005728" >
+      </testcase>
+      <testcase name="test_TC035_json_ida_e_volta" assertions="9" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.004312" >
+      </testcase>
+      <testcase name="test_TC036_json_corrompido_erro_parse" assertions="3" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.002892" >
+      </testcase>
+      <testcase name="test_TC037_store_var_preserva_tipos_godot" assertions="4" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.003505" >
+      </testcase>
+      <testcase name="test_TC038_binario_ordem_de_escrita_e_leitura" assertions="7" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.00407" >
+      </testcase>
+      <testcase name="test_TC039_configfile_salvar_carregar" assertions="6" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.003581" >
+      </testcase>
+      <testcase name="test_TC040_configfile_valor_padrao_arquivo_inexistente" assertions="3" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.001967" >
+      </testcase>
+      <testcase name="test_TC041_salvar_carregar_resource" assertions="7" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.004002" >
+      </testcase>
+      <testcase name="test_TC042_arquivo_criptografado_raw" assertions="2" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.009921" >
+      </testcase>
+      <testcase name="test_TC043_arquivo_criptografado_senha_correta" assertions="2" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.009736" >
+      </testcase>
+      <testcase name="test_TC044_arquivo_criptografado_senha_errada" assertions="3" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.013077" >
+      </testcase>
+      <testcase name="test_TC045_fluxo_completo_salvar_carregar" assertions="7" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.005878" >
+      </testcase>
+      <testcase name="test_TC046_carregar_arquivo_faltante_devolve_vazio" assertions="2" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.002919" >
+      </testcase>
+      <testcase name="test_TC047_carregar_corrompido_devolve_vazio" assertions="2" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.003491" >
+      </testcase>
+      <testcase name="test_TC048_carregar_json_formato_errado" assertions="2" status="pass" classname="Tests0/test_suite_save_load.gd" time="0.003226" >
+      </testcase>
+  </testsuite>
+  <testsuite name="Tests0/test_tesjohn.gd" tests="16" failures="0" skipped="0" time="0.00412" >
+      <testcase name="test_TC001_vector2_normalization" assertions="2" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000428" >
+      </testcase>
+      <testcase name="test_TC002_vector2_diagonal_normalization" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000326" >
+      </testcase>
+      <testcase name="test_TC003_vector2_length" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000264" >
+      </testcase>
+      <testcase name="test_TC004_vector2_distance" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000233" >
+      </testcase>
+      <testcase name="test_TC005_vector2_addition" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000202" >
+      </testcase>
+      <testcase name="test_TC006_vector2_subtraction" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000259" >
+      </testcase>
+      <testcase name="test_TC007_vector2_zero_normalization" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000289" >
+      </testcase>
+      <testcase name="test_TC008_vector2_same_position_distance" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000213" >
+      </testcase>
+      <testcase name="test_TC009_vector2_add_zero" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000236" >
+      </testcase>
+      <testcase name="test_TC010_vector2_subtract_itself" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000232" >
+      </testcase>
+      <testcase name="test_TC011_vector2_multiply_by_zero" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.00023" >
+      </testcase>
+      <testcase name="test_TC012_vector2_negative_values" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.00032" >
+      </testcase>
+      <testcase name="test_TC013_vector2_opposite_vectors" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000206" >
+      </testcase>
+      <testcase name="test_TC014_vector2_perpendicular_vectors" assertions="1" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000215" >
+      </testcase>
+      <testcase name="test_TC015_vector2_full_rotation" assertions="2" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000248" >
+      </testcase>
+      <testcase name="test_TC016_vector2_very_small_values" assertions="3" status="pass" classname="Tests0/test_tesjohn.gd" time="0.000219" >
+      </testcase>
+  </testsuite>
+  <testsuite name="Tests0/test_test.gd" tests="3" failures="0" skipped="0" time="0.001167" >
+      <testcase name="test_vector2_api_normalization" assertions="2" status="pass" classname="Tests0/test_test.gd" time="0.000382" >
+      </testcase>
+      <testcase name="test_string_sha256_api" assertions="2" status="pass" classname="Tests0/test_test.gd" time="0.000323" >
+      </testcase>
+      <testcase name="test_json_parsing_core" assertions="2" status="pass" classname="Tests0/test_test.gd" time="0.000462" >
+      </testcase>
   </testsuite>
 </testsuites>

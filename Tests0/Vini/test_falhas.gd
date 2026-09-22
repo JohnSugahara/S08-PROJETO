@@ -1,6 +1,6 @@
 extends GutTest
 
-const Fixtures = preload("res://Tests0/Vinni_teste/fixtures/fixtures.gd")
+const Fixtures = preload("res://Tests0/Vini/fixtures/fixtures.gd")
 
 
 # TC-022
